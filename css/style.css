@@ -1,5 +1,82 @@
 html,
 body {
   background-color: #141414;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+.navbar-logo,
+.nav-link {
+  color: white;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.navbar-logo {
+  font-size: 1.85rem;
+  text-decoration: none;
+}
+
+.navbar-logo:hover,
+.nav-link:hover {
+  color: cyan;
+}
+
+.nav-contact {
+  border-radius: 0.25rem;
+  border: 1px solid cyan;
+}
+
+.nav-contact:hover {
+  background-color: cyan;
+  color: white;
+}
+
+.nav-toggle {
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding: .5rem;
+  position: relative;
+}
+
+.section-title::before {
+  content: '';
+  width: 4rem;
+  height: 3px;
+  background-color: cyan;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
